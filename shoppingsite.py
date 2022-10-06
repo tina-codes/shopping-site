@@ -52,7 +52,7 @@ def show_melon(melon_id):
     """
 
     melon = melons.get_by_id(melon_id)
-    print(melon)
+    # print(melon)
     return render_template("melon_details.html",
                            display_melon=melon)
 
@@ -94,7 +94,7 @@ def show_shopping_cart():
         # - add the Melon object to the list created above
         melons_in_cart.append(melon)
 
-    print(melons_in_cart)
+    # print(melons_in_cart)
         
     #    - add quantity and total cost as attributes on the Melon object
     #    - add the Melon object to the list created above
@@ -132,7 +132,7 @@ def add_to_cart(melon_id):
 
     # - flash a success message
     flash("Your cart has been updated.")
-    print(cart)
+    # print(cart)
     # - redirect the user to the cart page
     return redirect("/cart")
 
