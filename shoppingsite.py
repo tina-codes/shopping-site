@@ -157,6 +157,8 @@ def process_login():
     # The logic here should be something like:
     #
     # - get user-provided name and password from request.form
+    # email = request.form.get('email')
+
     # - use customers.get_by_email() to retrieve corresponding Customer
     #   object (if any)
     # - if a Customer with that email was found, check the provided password
